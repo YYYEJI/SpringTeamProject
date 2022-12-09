@@ -11,7 +11,7 @@
   <component name="ChangeListManager">
     <list default="true" id="ab76363d-08c7-4e26-a522-0c530e8aa2e1" name="Changes" comment="Spring project">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/editform.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/editform.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/board/BeverageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/board/BeverageController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -212,6 +212,7 @@
       <workItem from="1670571544215" duration="985000" />
       <workItem from="1670572537015" duration="1321000" />
       <workItem from="1670589894951" duration="187000" />
+      <workItem from="1670602137010" duration="659000" />
     </task>
     <task id="LOCAL-00001" summary="Spring project">
       <created>1669960635421</created>
@@ -262,7 +263,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670601605436</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Spring project">
+      <created>1670601881801</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1670601881801</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

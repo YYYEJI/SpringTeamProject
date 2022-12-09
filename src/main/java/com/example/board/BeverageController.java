@@ -75,7 +75,7 @@ public class BeverageController {
         vo.getFile().transferTo(file);
 
         vo.setRegdate(new Date());
-        int i = beverageService.insertBeverage(vo);
+        int i = beverageService.updateBeverage(vo);
         if(i==0)
             System.out.println("데이터 수정 실패");
         else
