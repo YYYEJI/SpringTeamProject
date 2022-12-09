@@ -12,7 +12,7 @@
 
     <mvc:annotation-driven />
     <context:component-scan base-package="com.example" />
-    <mvc:resources mapping="/img/**" location="/resources/img/"/>
+
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
         <property name="prefix" value="/WEB-INF/views/" />
         <property name="suffix" value=".jsp" />
@@ -29,7 +29,9 @@
         </mvc:interceptor>
     </mvc:interceptors>
     <mvc:resources mapping="/resources/**" location="/resources/" />
-
+    <mvc:resources mapping="/img/**" location="/resources/img/"/>
+    <mvc:resources mapping="/css/**" location="/resources/css/"/>
+    
     <bean id = "multipartResolver"
           class = "org.springframework.web.multipart.commons.CommonsMultipartResolver" />
 </beans>
