@@ -4,6 +4,13 @@ import java.util.Date;
 
 public class BeverageVO {
     private int seq;
+    private String name;
+    private String photo;
+    private int price;
+    private int newDrinkNum;
+    private String expiration;
+    private String company;
+    private Date regdate;
 
     public int getSeq() {
         return seq;
@@ -77,13 +84,7 @@ public class BeverageVO {
     }
 
     private String category;
-    private String name;
-    private String photo;
-    private int price;
-    private int newDrinkNum;
-    private String expiration;
-    private String company;
-    private Date regdate;
+
 
 
 
