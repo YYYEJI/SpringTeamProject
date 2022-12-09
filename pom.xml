@@ -71,7 +71,8 @@
     </dependency>
 
   </dependencies>
+
   <build>
-    <finalName>SpringLoginProject</finalName>
+    <finalName>SpringTeamProject</finalName>
   </build>
 </project>
