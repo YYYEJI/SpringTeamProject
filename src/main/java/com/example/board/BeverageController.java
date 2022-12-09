@@ -8,13 +8,13 @@ import org.springframework.web.bind.annotation.*;
 import java.util.Date;
 
 @Controller
-public class BoardController {
+public class BeverageController {
     @Autowired
-    BoardService boardService;
+    BeverageService beverageService;
 
     @RequestMapping(value = "/board/list", method= RequestMethod.GET)
     public String boardlist(Model model) {
-        model.addAttribute("list", boardService.getBoardList());
+        model.addAttribute("list", beverageService.getBeverageList());
         return "list";
     }
 
@@ -24,10 +24,10 @@ public class BoardController {
     }
 
     @RequestMapping(value = "/board/addok", method= RequestMethod.GET)
-    public String addPostOK(BoardVO vo) {
+    public String addPostOK(BeverageVO vo) {
         vo.setRegdate(new Date());
         System.out.println(vo);
-        int i = boardService.insertBoard(vo);
+        int i = beverageService.insertBeverage(vo);
         if(i==0)
             System.out.println("데이터 추가 실패");
         else
@@ -36,12 +36,12 @@ public class BoardController {
     }
 
     @RequestMapping(value = "/board/editok", method= RequestMethod.GET)
-    public String editPostOK(@ModelAttribute("boardVO") BoardVO boardVO) {
+    public String editPostOK(@ModelAttribute("boardVO") BeverageVO beverageVO) {
         System.out.println("edit post ok start");
-        boardVO.setRegdate(new Date());
+        beverageVO.setRegdate(new Date());
 
-        System.out.println(boardVO.toString());
-        int i = boardService.updateBoard(boardVO);
+        System.out.println(beverageVO.toString());
+        int i = beverageService.updateBeverage(beverageVO);
         if(i==0)
             System.out.println("데이터 수정 실패");
         else
@@ -51,7 +51,7 @@ public class BoardController {
 
     @RequestMapping(value="/board/deleteok/{id}", method=RequestMethod.GET)
     public String deletePost(@PathVariable("id") int id) {
-        int i = boardService.deleteBoard(id);
+        int i = beverageService.deleteBeverage(id);
         if(i == 0)
             System.out.println("데이터 삭제 실패");
         else
@@ -64,9 +64,9 @@ public class BoardController {
     @RequestMapping(value = "/board/editform", method= RequestMethod.GET)
     public String editPost(@RequestParam(value = "id") Integer id, Model model) {
         System.out.println("edit post start!");
-        BoardVO boardVO = boardService.getBoard(id);
-        System.out.println(boardVO.toString());
-        model.addAttribute("boardVO", boardVO);
+        BeverageVO beverageVO = beverageService.getBeverage(id);
+        System.out.println(beverageVO.toString());
+        model.addAttribute("beverageVO", beverageVO);
         model.addAttribute("id", id);
 
         return "editform";

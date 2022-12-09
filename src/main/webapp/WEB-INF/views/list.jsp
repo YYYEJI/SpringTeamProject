@@ -44,9 +44,12 @@
         <tr>
             <td>${u.seq}</td>
             <td>${u.category}</td>
-            <td>${u.title}</td>
-            <td>${u.writer}</td>
-            <td>${u.content}</td>
+            <td>${u.name}</td>
+<%--            <td>${u.photo}</td>--%>
+            <td>${u.price}</td>
+            <td>${u.newDrinkNum}</td>
+            <td>${u.expiration}</td>
+            <td>${u.company}</td>
             <td>${u.regdate}</td>
             <td><a href="./editform?id=${u.seq}">글수정</a></td>
             <td><a href="javascript:delete_ok('${u.seq}')">글삭제</a></td>
