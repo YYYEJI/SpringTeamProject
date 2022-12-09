@@ -37,7 +37,7 @@
                 </td>
             </tr>
             <tr><td>음료 이름:</td><td><form:input path="name"/></td></tr>
-            <tr><td>음료 사진</td><td><form:input type="file" path="photo"/></td></tr>
+            <tr><td>음료 사진</td><td><form:input type="file" path="file"/></td></tr>
             <tr><td>음료 가격:</td><td><form:input path="price"/></td></tr>
             <tr><td>새로 들어온 음료 개수:</td><td><form:input path="newDrinkNum"/></td></tr>
             <tr><td>유통기한:</td><td><form:input path="expiration"/></td></tr>
