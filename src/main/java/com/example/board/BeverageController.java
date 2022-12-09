@@ -5,6 +5,11 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
+import javax.servlet.http.HttpServletRequest;
+import java.io.File;
+import java.io.IOException;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.Date;
 
 @Controller
@@ -18,14 +23,30 @@ public class BeverageController {
     }
 
     @RequestMapping(value = "/board/add", method= RequestMethod.GET)
-    public String addPost() {
+    public String addPost(@ModelAttribute("beverage")BeverageVO vo) {
         return "addpostform";
     }
 
-    @RequestMapping(value = "/board/addok", method= RequestMethod.GET)
-    public String addPostOK(BeverageVO vo) {
+    @RequestMapping(value = "/board/addok", method= RequestMethod.POST)
+    public String addPostOK(@ModelAttribute("beverage") BeverageVO vo, HttpServletRequest request) throws IOException {
+        System.out.println(vo.getFile().getOriginalFilename());
+
+        vo.setPhoto(vo.getFile().getOriginalFilename());
+
+        String uploadPath = request.getServletContext().getRealPath("./resources/uploadedPhoto");
+        File folder = new File(uploadPath);
+
+        if(!folder.exists()){
+            System.out.println("폴더 생성");
+            folder.mkdir();
+        }else{
+            System.out.println("폴더 있음");
+        }
+
+        File file = new File(uploadPath+"/"+vo.getFile().getOriginalFilename());
+        vo.getFile().transferTo(file);
+
         vo.setRegdate(new Date());
-        System.out.println(vo);
         int i = beverageService.insertBeverage(vo);
         if(i==0)
             System.out.println("데이터 추가 실패");

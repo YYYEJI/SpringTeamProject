@@ -12,13 +12,14 @@
 <html>
 <head>
     <title>Edit</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 </head>
 <body>
     <form:form modelAttribute="beverageVO" method="get" action="./editok">
         <form:hidden path="seq" />
 
-<%--        <input type="text" name="id" value="${param.id}"/>--%>
         <table id>
+            <p>음료수의 정보를 수정하세요~</p>
             <tr>
                 <td>
                     <label for="category">음료 종류:</label>
@@ -36,7 +37,7 @@
                 </td>
             </tr>
             <tr><td>음료 이름:</td><td><form:input path="name"/></td></tr>
-<%--            <tr><td>음료 사진</td><td><input ="photo" name="photo"/></td></tr>--%>
+            <tr><td>음료 사진</td><td><form:input type="file" path="photo"/></td></tr>
             <tr><td>음료 가격:</td><td><form:input path="price"/></td></tr>
             <tr><td>새로 들어온 음료 개수:</td><td><form:input path="newDrinkNum"/></td></tr>
             <tr><td>유통기한:</td><td><form:input path="expiration"/></td></tr>

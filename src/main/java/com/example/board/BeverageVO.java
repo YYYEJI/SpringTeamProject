@@ -1,5 +1,7 @@
 package com.example.board;
 
+import org.springframework.web.multipart.MultipartFile;
+
 import java.util.Date;
 
 public class BeverageVO {
@@ -11,6 +13,16 @@ public class BeverageVO {
     private String expiration;
     private String company;
     private Date regdate;
+
+    public MultipartFile getFile() {
+        return file;
+    }
+
+    public void setFile(MultipartFile file) {
+        this.file = file;
+    }
+
+    private MultipartFile file;
 
     public int getSeq() {
         return seq;
@@ -86,19 +98,19 @@ public class BeverageVO {
     private String category;
 
 
-
-
-//    @Override
-//    public String toString() {
-//        return "BoardVO{" +
-//                "seq=" + seq +
-//                ", category='" + category + '\'' +
-//                ", title='" + title + '\'' +
-//                ", writer='" + writer + '\'' +
-//                ", content='" + content + '\'' +
-//                ", regdate=" + regdate +
-//                '}';
-//    }
-
-
+    @Override
+    public String toString() {
+        return "BeverageVO{" +
+                "seq=" + seq +
+                ", name='" + name + '\'' +
+                ", photo='" + photo + '\'' +
+                ", price=" + price +
+                ", newDrinkNum=" + newDrinkNum +
+                ", expiration='" + expiration + '\'' +
+                ", company='" + company + '\'' +
+                ", regdate=" + regdate +
+                ", file=" + file +
+                ", category='" + category + '\'' +
+                '}';
+    }
 }

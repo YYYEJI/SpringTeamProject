@@ -1,0 +1,16 @@
+table {
+    border-collapse: collapse;
+    font-family: arial;
+    width: 100%;
+}
+td {
+    text-align: center;
+}
+
+.list-title {
+    padding-top: 20px;
+    text-weight: bold;
+    text-align: center;
+    font-size: 30px;
+    font-family: "Lucida Console", "Courier New", monospace;
+}

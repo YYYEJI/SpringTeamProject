@@ -2,12 +2,12 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="Beverage">
     <insert id="insertBeverage">
-        insert into Beverage (category, name, price, newDrinkNum,expiration,company) values
-            (#{category} , #{name} , #{price}, #{newDrinkNum},#{expiration},#{company})
+        insert into Beverage (category, name, photo, price, newDrinkNum,expiration,company) values
+            (#{category} , #{name}, #{photo} , #{price}, #{newDrinkNum},#{expiration},#{company})
     </insert>
     <update id="updateBeverage">
         update Beverage
-        set category=#{category}, name=#{name}, price=#{price}, newDrinkNum = #{newDrinkNum}, expiration = #{expiration}, company=#{company}  where seq=#{seq}
+        set category=#{category}, name=#{name}, photo = #{photo}, price=#{price}, newDrinkNum = #{newDrinkNum}, expiration = #{expiration}, company=#{company}  where seq=#{seq}
     </update>
     <delete id="deleteBeverage">
         delete from Beverage where seq=#{seq}
