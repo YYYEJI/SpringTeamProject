@@ -11,7 +11,6 @@ import java.util.Date;
 public class BeverageController {
     @Autowired
     BeverageService beverageService;
-
     @RequestMapping(value = "/board/list", method= RequestMethod.GET)
     public String boardlist(Model model) {
         model.addAttribute("list", beverageService.getBeverageList());

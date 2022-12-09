@@ -8,4 +8,5 @@ public interface BeverageService {
     public int updateBeverage(BeverageVO vo);
     public BeverageVO getBeverage(int seq);
     public List<BeverageVO> getBeverageList();
+
 }

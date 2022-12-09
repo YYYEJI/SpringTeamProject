@@ -28,7 +28,6 @@ public class BeverageVO {
     public void setName(String name) {
         this.name = name;
     }
-
     public String getPhoto() {
         return photo;
     }

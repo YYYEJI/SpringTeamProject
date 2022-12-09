@@ -9,7 +9,6 @@ import java.util.List;
 public class BeverageServicelmpl implements BeverageService {
     @Autowired
     BeverageDAO beverageDAO;
-
     public int insertBeverage(BeverageVO vo) {
         return beverageDAO.insertBeverage(vo);
     }

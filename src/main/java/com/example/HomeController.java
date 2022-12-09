@@ -15,6 +15,7 @@ import java.util.Locale;
 
 @Controller
 public class HomeController {
+
     private static final Logger logger = LoggerFactory.getLogger(BeverageController.class);
     @RequestMapping("/")
     public String home(Locale locale, Model model){

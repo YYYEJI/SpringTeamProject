@@ -11,7 +11,6 @@ public class BeverageDAO {
     public SqlSession getSqlSession() {
         return sqlSession;
     }
-
     public void setSqlSession(SqlSession sqlSession) {
         this.sqlSession = sqlSession;
     }
