@@ -9,14 +9,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ab76363d-08c7-4e26-a522-0c530e8aa2e1" name="Changes" comment="update file1" />
+    <list default="true" id="ab76363d-08c7-4e26-a522-0c530e8aa2e1" name="Changes" comment="Spring project">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/util/LoginCheckInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/util/LoginCheckInterceptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/dispatcher-servlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/img/cola.webp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/img/uploadedPhoto/cola.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/img/pokari.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/img/uploadedPhoto/pokari.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/img/sida.webp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/img/uploadedPhoto/sida.webp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/img/stw.jpeg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/img/uploadedPhoto/stw.jpeg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/resources/img/tea.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/resources/img/uploadedPhoto/tea.jpg" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="ComposerSettings">
-    <execution />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -30,7 +38,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    <option name="RESET_MODE" value="HARD" />
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -54,9 +61,9 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/binjiseong/Documents/실프/SpringTeamProject/src/main/webapp/resources/img&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/song-yeji/Downloads/SpringTeamProject/src/main/webapp/resources/css&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.44712645&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
@@ -70,10 +77,14 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/webapp/resources/img" />
       <recent name="$PROJECT_DIR$/src/main/webapp/resources/css" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/resources/img" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/webapp/resources/img/uploadedPhoto" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/resources/img" />
+      <recent name="$PROJECT_DIR$/target/SpringTeamProject/resources/img/uploadedPhoto" />
+      <recent name="$PROJECT_DIR$/src/main/webapp/resources/uploadedPhoto" />
       <recent name="$PROJECT_DIR$/src/main/webapp/WEB-INF/views" />
     </key>
   </component>
@@ -206,8 +217,9 @@
       <workItem from="1670490257915" duration="136000" />
       <workItem from="1670545840413" duration="509000" />
       <workItem from="1670546472441" duration="381000" />
-      <workItem from="1670571544215" duration="159000" />
-      <workItem from="1670592215303" duration="6465000" />
+      <workItem from="1670571544215" duration="985000" />
+      <workItem from="1670572537015" duration="1321000" />
+      <workItem from="1670589894951" duration="187000" />
     </task>
     <task id="LOCAL-00001" summary="Spring project">
       <created>1669960635421</created>
@@ -244,12 +256,12 @@
       <option name="project" value="LOCAL" />
       <updated>1670546665825</updated>
     </task>
-    <task id="LOCAL-00006" summary="update file1">
-      <created>1670598981476</created>
+    <task id="LOCAL-00006" summary="Spring project">
+      <created>1670571761109</created>
       <option name="number" value="00006" />
       <option name="presentableId" value="LOCAL-00006" />
       <option name="project" value="LOCAL" />
-      <updated>1670598981485</updated>
+      <updated>1670571761109</updated>
     </task>
     <option name="localTasksCounter" value="7" />
     <servers />
@@ -270,7 +282,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Spring project" />
-    <MESSAGE value="update file1" />
-    <option name="LAST_COMMIT_MESSAGE" value="update file1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Spring project" />
   </component>
 </project>

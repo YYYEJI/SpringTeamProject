@@ -42,7 +42,7 @@
             <td>${u.seq}</td>
             <td>${u.category}</td>
             <td>${u.name}</td>
-            <td><img src="${pageContext.request.contextPath}/resources/img/${u.getPhoto()}" width="150px" height="100px"></td>
+            <td><img src="${pageContext.request.contextPath}/resources/img/uploadedPhoto/${u.getPhoto()}" width="150px" height="100px"></td>
             <td>${u.price}</td>
             <td>${u.newDrinkNum}</td>
             <td>${u.expiration}</td>
