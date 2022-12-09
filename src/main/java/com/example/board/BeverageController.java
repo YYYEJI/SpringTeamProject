@@ -33,7 +33,7 @@ public class BeverageController {
 
         vo.setPhoto(vo.getFile().getOriginalFilename());
 
-        String uploadPath = request.getServletContext().getRealPath("./resources/uploadedPhoto");
+        String uploadPath = request.getServletContext().getRealPath("/resources/img/uploadedPhoto");
         File folder = new File(uploadPath);
 
         if(!folder.exists()){
@@ -55,13 +55,27 @@ public class BeverageController {
         return "redirect:list";
     }
 
-    @RequestMapping(value = "/board/editok", method= RequestMethod.GET)
-    public String editPostOK(@ModelAttribute("boardVO") BeverageVO beverageVO) {
-        System.out.println("edit post ok start");
-        beverageVO.setRegdate(new Date());
+    @RequestMapping(value = "/board/editok", method= RequestMethod.POST)
+    public String editOK(@ModelAttribute("beverage") BeverageVO vo, HttpServletRequest request) throws IOException {
+        System.out.println(vo.getFile().getOriginalFilename());
 
-        System.out.println(beverageVO.toString());
-        int i = beverageService.updateBeverage(beverageVO);
+        vo.setPhoto(vo.getFile().getOriginalFilename());
+
+        String uploadPath = request.getServletContext().getRealPath("/resources/img/uploadedPhoto");
+        File folder = new File(uploadPath);
+
+        if(!folder.exists()){
+            System.out.println("폴더 생성");
+            folder.mkdir();
+        }else{
+            System.out.println("폴더 있음");
+        }
+
+        File file = new File(uploadPath+"/"+vo.getFile().getOriginalFilename());
+        vo.getFile().transferTo(file);
+
+        vo.setRegdate(new Date());
+        int i = beverageService.insertBeverage(vo);
         if(i==0)
             System.out.println("데이터 수정 실패");
         else
